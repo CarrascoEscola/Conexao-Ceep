@@ -92,6 +92,7 @@ section{
     margin:0 1rem;
     font-size: 1.6rem;
     color:#fff;
+    text-transform: none;
 }
 
 .header .navbar a:hover{
@@ -186,6 +187,7 @@ section{
 }
 
 .menu .box-container .box img {
+    border-radius: 20px      ;
 height: 35em;
 }
 
@@ -206,4 +208,77 @@ height: 35em;
     font-size: 2rem;
     color: var(--main-color);
     line-height: 1.8;
+}
+
+
+@media (max-width:991px){
+
+    html{
+        font-size: 50%;
+    }
+
+    .header{
+        padding:1.2rem 1.75rem;
+    }
+
+    section{
+        padding:1.75rem;
+    }
+
+}
+
+@media (max-width:768px){
+
+    #menu-btn{
+        display: inline-block;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top:100%; right: -100%;
+        background: #fff;
+        width: 30rem;
+        height: calc(100vh - 9.5rem);
+    }
+
+    .header .navbar.active{
+        right:0;
+    }
+
+    .header .navbar a{
+        color:var(--black);
+        display: block;
+        margin:1.5rem;
+        padding:.5rem;
+        font-size: 2rem;
+        
+    }
+
+    .header .search-form{
+        width: 90%;
+        right: 2rem;
+    }
+
+    .home{
+        background-position: left;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .home .content h3{
+        font-size: 4.5rem;
+    }
+
+    .home .content p{
+        font-size: 1.5rem;
+    }
+
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 40%;
+    }
+
 }

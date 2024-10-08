@@ -13,7 +13,6 @@
     box-sizing: border-box;
     outline: none; border:none;
     text-decoration: none;
-    text-transform: capitalize;
     transition: .2s linear;
 }
 
@@ -372,6 +371,7 @@ section{
         margin:1.5rem;
         padding:.5rem;
         font-size: 2rem;
+        
     }
 
     .header .search-form{
